@@ -39,13 +39,13 @@ h3 {
   color: var(--color-heading);
 }
 
-@media (min-width: 1024px) {
-  .item {
+.item {
+    position: relative;
     margin-top: 0;
     padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
-  }
+}
 
-  i {
+i {
     top: calc(50% - 25px);
     left: -26px;
     position: absolute;
@@ -54,9 +54,9 @@ h3 {
     border-radius: 8px;
     width: 50px;
     height: 50px;
-  }
-
 }
+
+
 
 .item:before {
     content: ' ';
@@ -65,22 +65,24 @@ h3 {
     left: 0;
     bottom: calc(50% + 25px);
     height: calc(50% - 25px);
-  }
+}
 
-  .item:after {
+.item:after {
     content: ' ';
     border-left: 1px solid black;
     position: absolute;
     left: 0;
     top: calc(50% + 25px);
     height: calc(50% - 25px);
-  }
+}
 
-  .item:first-of-type:before {
+.item:first-of-type:before {
     display: none;
-  }
+}
 
-  .item:last-of-type:after {
+.item:last-of-type:after {
     display: none;
-  }
+}
+
+
 </style>
