@@ -2,10 +2,18 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router'
+import { createRouter, createWebHashHistory } from "vue-router"
+import MainComponent from "./pages/linkList.vue"
 
-const app = createApp(App)
+const LINKLIST = { template: '<div>linkList</div>' }
 
-app.use(router)
+const routes = [
+  { path: '/linkList', component: MainComponent },
+]
 
-app.mount('#app')
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes,
+})
+
+createApp(App).use(router).mount("#app")

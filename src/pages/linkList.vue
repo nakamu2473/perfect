@@ -1,5 +1,5 @@
 <script>
-import WelcomeItem from './WelcomeItem.vue'
+import WelcomeItem from '../components/WelcomeItem.vue'
 export default {
   components: {
     WelcomeItem
@@ -9,7 +9,7 @@ export default {
     return {
       unagero: {
         1: {
-          date: "2021年7月10日",
+          date: "21.7.10",
           title: "#1　ショウタとカネ",
           info: {
             1: {
@@ -23,14 +23,14 @@ export default {
           }
         },
         2: {
-          date: "2021年7月24日",
+          date: "21.7.24",
           title: "#2　小僧解体新書",
           info: {
             1: "中谷さんの黒歴史ブログ公開"
           }
         },
         3: {
-          date: "2021年8月7日",
+          date: "21.8.7",
           title: "#3　救世主登場",
           info: {
             1: "写真集の救世主"
@@ -41,10 +41,9 @@ export default {
   }
 }
 </script>
-
 <template>
-
-  <div v-for="(item, key) in unagero" :key="key">
+    <div> linkList </div>
+    <div v-for="(item, key) in unagero" :key="key">
       <WelcomeItem>
         <template #icon>
           {{ item.date }}
@@ -57,5 +56,4 @@ export default {
         </ul>
       </WelcomeItem>
   </div>
-
 </template>
