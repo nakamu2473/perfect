@@ -55,9 +55,6 @@ i {
     width: 50px;
     height: 50px;
 }
-
-
-
 .item:before {
     content: ' ';
     border-left: 1px solid black;
