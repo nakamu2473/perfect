@@ -13,7 +13,8 @@ export default defineConfig({
     build: {
       rollupOptions: {
         // https://rollupjs.org/configuration-options/
-        base: "/リポジトリ名/"
+        base: "/リポジトリ名/",
+        outDir: "docs",
       },
     },
   }
