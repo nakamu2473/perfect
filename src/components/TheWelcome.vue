@@ -44,18 +44,6 @@ export default {
 
 <template>
 
-  <div v-for="(item, key) in unagero" :key="key">
-      <WelcomeItem>
-        <template #icon>
-          {{ item.date }}
-        </template>
-        <template #heading>{{ item.title }}</template>
-        <ul>
-          <li v-for="(info, key) in item.info" :key="key">
-            <a :href="info.url">{{ info.point }}</a>
-          </li>
-        </ul>
-      </WelcomeItem>
-  </div>
+
 
 </template>

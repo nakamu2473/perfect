@@ -41,16 +41,16 @@ export default {
   }
 }
 </script>
-<template>
+<template> 
     <div> linkList </div>
-    <div v-for="(item, key) in unagero" :key="key">
-      <WelcomeItem>
+    <div > 
+      <WelcomeItem v-for="(nakami, key) in unagero" :key="key">
         <template #icon>
           <!-- {{ item.date }} -->
         </template>
-        <template #heading>{{ item.title }}</template>
+        <template #heading>{{ nakami.title }}</template>
         <ul>
-          <li v-for="(info, key) in item.info" :key="key">
+          <li v-for="(info, key) in nakami.info" :key="key">
             <a :href="info.url"   target="_blank" rel="noopener noreferrer">{{ info.point }}</a>
           </li>
         </ul>
