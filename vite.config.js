@@ -9,6 +9,12 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
+    },
+    build: {
+      rollupOptions: {
+        // https://rollupjs.org/configuration-options/
+        base: "/リポジトリ名/"
+      },
+    },
   }
 })
