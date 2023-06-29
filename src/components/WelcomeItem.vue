@@ -16,6 +16,9 @@
 .item {
   margin-top: 2rem;
   display: flex;
+  border: solid;
+  margin-top:5px;
+  margin-bottom:5px;
 }
 
 .details {
@@ -41,7 +44,8 @@ h3 {
 
 .item {
     position: relative;
-    margin-top: 0;
+    margin-top: 1;
+    margin-bottom: 1;
     padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
 }
 

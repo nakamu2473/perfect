@@ -23,20 +23,22 @@ export default {
   </header>
     <TheHeader />
     <RouterView />
-    <WelcomeItem>
-    <template #icon>
-      kari
-    </template>
-    <template #heading>たいとる</template>
-   いやほいいやほい
-  </WelcomeItem>
-    <WelcomeItem>
-    <template #icon>
-      kari
-    </template>
-    <template #heading>たいとる</template>
-   いやほいいやほい
-  </WelcomeItem>
+    <div v-if="false" style="border: solid 1px black;">
+      <WelcomeItem>
+        <template #icon>
+          kari
+        </template>
+        <template #heading>たいとる</template>
+      いやほいいやほい
+      </WelcomeItem>
+      <WelcomeItem>
+        <template #icon>
+          kari
+        </template>
+        <template #heading>たいとる</template>
+      いやほいいやほい
+    </WelcomeItem>
+  </div>
 </template>
 
 <style scoped>
