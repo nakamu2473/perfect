@@ -1,29 +1,22 @@
 <template>
-  <div class="item">
-    <i>
-      <slot name="icon"></slot>
-    </i>
-    <div class="details">
-      <h3>
-        <slot name="heading"></slot>
-      </h3>
-      <slot></slot>
-    </div>
+  <div class="details">
+    <h3>
+      <slot name="heading"></slot>
+    </h3>
+    <slot></slot>
   </div>
 </template>
 
 <style scoped>
-.item {
-  margin-top: 2rem;
-  display: flex;
-  border: solid;
-  margin-top:5px;
-  margin-bottom:5px;
-}
 
 .details {
   flex: 1;
   margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom:  1rem;
+  background: rgb(255, 241, 241);
+  border-radius: 20% 60% 20% 50%/50% 50% 70% 60%;
 }
 
 i {
@@ -42,13 +35,6 @@ h3 {
   color: var(--color-heading);
 }
 
-.item {
-    position: relative;
-    margin-top: 1;
-    margin-bottom: 1;
-    padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
-}
-
 i {
     top: calc(50% - 25px);
     left: -26px;
@@ -59,31 +45,4 @@ i {
     width: 50px;
     height: 50px;
 }
-.item:before {
-    content: ' ';
-    border-left: 1px solid black;
-    position: absolute;
-    left: 0;
-    bottom: calc(50% + 25px);
-    height: calc(50% - 25px);
-}
-
-.item:after {
-    content: ' ';
-    border-left: 1px solid black;
-    position: absolute;
-    left: 0;
-    top: calc(50% + 25px);
-    height: calc(50% - 25px);
-}
-
-.item:first-of-type:before {
-    display: none;
-}
-
-.item:last-of-type:after {
-    display: none;
-}
-
-
 </style>

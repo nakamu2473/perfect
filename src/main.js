@@ -3,12 +3,15 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import { createRouter, createWebHashHistory } from "vue-router"
-import MainComponent from "./pages/linkList.vue"
+import LinkListComponent from "./pages/linkList.vue"
+import HistoryComponent from "./pages/history.vue"
 
 const LINKLIST = { template: '<div>linkList</div>' }
+const HISTORY = { template: '<div>history</div>' }
 
 const routes = [
-  { path: '/linkList', component: MainComponent },
+  { path: '/linkList', component: LinkListComponent },
+  { path: '/history', component: HistoryComponent },
 ]
 
 const router = createRouter({

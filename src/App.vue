@@ -1,16 +1,14 @@
 <script>
-import { RouterLink, RouterView } from 'vue-router'
+import {  RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
 import TheHeader from './components/TheHeader.vue'
 import WelcomeItem from './components/WelcomeItem.vue'
 
 export default {
   components: {
     HelloWorld,
-    TheWelcome,
     TheHeader,
-    WelcomeItem
+    WelcomeItem,
    }
 }
 </script>
@@ -23,22 +21,6 @@ export default {
   </header>
     <TheHeader />
     <RouterView />
-    <div v-if="false" style="border: solid 1px black;">
-      <WelcomeItem>
-        <template #icon>
-          kari
-        </template>
-        <template #heading>たいとる</template>
-      いやほいいやほい
-      </WelcomeItem>
-      <WelcomeItem>
-        <template #icon>
-          kari
-        </template>
-        <template #heading>たいとる</template>
-      いやほいいやほい
-    </WelcomeItem>
-  </div>
 </template>
 
 <style scoped>
