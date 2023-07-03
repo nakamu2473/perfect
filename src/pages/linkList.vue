@@ -45,13 +45,5 @@ export default {
   overflow: hidden;
   font-size: 80%;
 }
-.icon {
-  width: 0;
-  height: 0;
-  border-style: 1px solid;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 17px solid #89c0ff;
-  border-right: 0;
-}
+
 </style>

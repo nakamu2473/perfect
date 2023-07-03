@@ -1,6 +1,6 @@
 <script>
 import ListItem from '../components/ListItem.vue'
-import { unagero } from "../data/unagero"
+import { history } from "../data/history"
 
 
 export default {
@@ -10,7 +10,7 @@ export default {
    ,
   data() {
     return {
-      unagero_history: unagero,
+      history: history,
     }
   }
 }
@@ -21,17 +21,14 @@ export default {
 <template> 
   <div class="history" > 
       <p>二人の歴史</p>
-    <ListItem v-for="(nakami, key) in unagero_history" :key="key">
+    <ListItem v-for="(nakami, key) in history" :key="key">
       <template #icon >
-        <i class="icon" />
+        {{ nakami.age }}
       </template>
-      <template #heading>{{ nakami.title }}</template>
-      <div class="description">{{  nakami.description}}</div>
-      <ul>
-        <li v-for="(info, key) in nakami.info" :key="key">
-          <a :href="info.url"   target="_blank" rel="noopener noreferrer">{{ info.point }}</a>
-        </li>
-      </ul>
+
+      <div class="history_link" > 
+        <a :href="nakami.u1"   target="_blank" rel="noopener noreferrer">{{ nakami.t1 }}</a>
+      </div>
     </ListItem>
 </div>
 </template>
@@ -45,13 +42,8 @@ export default {
   overflow: hidden;
   font-size: 80%;
 }
-.icon {
-  width: 0;
-  height: 0;
-  border-style: 1px solid;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 17px solid #89c0ff;
-  border-right: 0;
+
+.history_link{
+  min-height: 30px;
 }
 </style>

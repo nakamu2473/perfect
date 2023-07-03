@@ -19,15 +19,6 @@
   border-radius: 20% 60% 20% 50%/50% 50% 70% 60%;
 }
 
-i {
-  display: flex;
-  place-items: center;
-  place-content: center;
-  width: 32px;
-  height: 32px;
-  color: var(--color-text);
-}
-
 h3 {
   font-size: 1.2rem;
   font-weight: 500;
@@ -35,14 +26,4 @@ h3 {
   color: var(--color-heading);
 }
 
-i {
-    top: calc(50% - 25px);
-    left: -26px;
-    position: absolute;
-    border: 1px solid var(--color-border);
-    background: var(--color-background);
-    border-radius: 8px;
-    width: 50px;
-    height: 50px;
-}
 </style>

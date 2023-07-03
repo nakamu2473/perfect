@@ -44,7 +44,7 @@ h3 {
 
 i {
     top: calc(50% - 25px);
-    left: -26px;
+    left: 10px;
     position: absolute;
     border: 1px solid var(--color-border);
     background: var(--color-background);
@@ -54,18 +54,18 @@ i {
 }
 .item:before {
     content: ' ';
-    border-left: 1px solid black;
+    border-left: 1px solid #c842f4;
     position: absolute;
-    left: 0;
+    left: 35px;
     bottom: calc(50% + 25px);
     height: calc(50% - 25px);
 }
 
 .item:after {
     content: ' ';
-    border-left: 1px solid black;
+    border-left: 1px solid #c842f4;
     position: absolute;
-    left: 0;
+    left: 35px;
     top: calc(50% + 25px);
     height: calc(50% - 25px);
 }
