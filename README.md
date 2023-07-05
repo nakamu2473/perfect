@@ -1,5 +1,8 @@
 # perfect
 
+中村さんのVue道場鍛錬所。
+ここがあの女のハウスね……！
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
