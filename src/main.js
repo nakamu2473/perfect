@@ -7,11 +7,10 @@ import LinkListComponent from "./pages/linkList.vue"
 import HistoryComponent from "./pages/history.vue"
 
 const LINKLIST = { template: '<div>linkList</div>' }
-const HISTORY = { template: '<div>history</div>' }
 
 const routes = [
   { path: '/linkList', component: LinkListComponent },
-  { path: '/history', component: HistoryComponent },
+  { path: '/', component: HistoryComponent },
 ]
 
 const router = createRouter({
