@@ -43,7 +43,7 @@ h3 {
 }
 
 i {
-    top: calc(50% - 25px);
+    /* top: calc(50% - 25px); */
     left: 10px;
     position: absolute;
     border: 1px solid var(--color-border);
@@ -59,6 +59,7 @@ i {
     left: 35px;
     bottom: calc(50% + 25px);
     height: calc(50% - 25px);
+    z-index: -1 
 }
 
 .item:after {
@@ -66,8 +67,9 @@ i {
     border-left: 1px solid #c842f4;
     position: absolute;
     left: 35px;
-    top: calc(50% + 25px);
-    height: calc(50% - 25px);
+    top: calc(38%);
+    height: calc(100%);
+    z-index: -1 
 }
 
 .item:first-of-type:before {
