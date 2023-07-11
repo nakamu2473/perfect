@@ -19,6 +19,58 @@ export default {
 </script>
 
 <template> 
+  <div class="rank" > 
+    <div class="rank_title" style="background-color: red; height: 50px;" > 
+
+      <p>流行語大賞2022</p>
+    </div>
+    <div class="body" style="padding-left: 50px; padding-right: 50px;">
+      <div style="background-color: yellow; border: solid black 1px; display:flex;">
+        <div  style="position:relative;">
+          <img src="../icons/crown.png" style=" width: 60px;" /><span style="position: absolute;top:16px;left:22px;"> 1位</span></div>
+        <div>
+          <div style="">せつめい！</div>
+          <div>せつめい！</div>
+        </div>
+      </div>
+      <div style="background-color: gray; height: 60px; border: solid black 1px; display:flex;">
+        <div  style="position:relative;">
+          <img src="../icons/crown.png" style=" width: 60px;" /><span style="position: absolute;top:16px;left:22px;"> 2位</span></div>
+        <div>
+          <div style="">せつめい！</div>
+          <div>せつめい！</div>
+        </div>
+      </div>
+      <div style="background-color: orange; height: 60px; border: solid black 1px;display:flex;">
+        <div  style="position:relative;">
+          <img src="../icons/crown.png" style=" width: 60px;" /><span style="position: absolute;top:16px;left:22px;"> 3位</span></div>
+        <div>
+          <div style="">せつめい！</div>
+          <div>せつめい！</div>
+        </div>
+      </div>
+      <div style="background-color: pink; height: 60px; border: solid black 1px;display:flex;">
+        <div  style="position:relative;">
+          <img src="../icons/crown.png" style=" width: 60px;" /><span style="position: absolute;top:16px;left:22px;"> 4位</span></div>
+        <div>
+          <div style="">せつめい！</div>
+          <div>せつめい！</div>
+        </div>
+      </div>
+      <div style="background-color: skyblue; height: 60px; border: solid black 1px;display:flex;">
+        <div  style="position:relative;">
+          <img src="../icons/crown.png" style=" width: 60px;" /><span style="position: absolute;top:16px;left:22px;"> 5位</span></div>
+        <div>
+          <div style="">せつめい！</div>
+          <div>せつめい！</div>
+        </div>
+      </div>
+      １位から ５位までならべるぞー
+      deteru!hai!
+      カラフル！
+    </div>
+    
+  </div>
   <div class="history" > 
       <p>二人の歴史</p>
     <ListItem v-for="(nakami, key) in history" :key="key">
