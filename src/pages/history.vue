@@ -24,7 +24,7 @@ export default {
 
       <p>流行語大賞2022</p>
     </div>
-    <div class="body">
+    <div class="body" style="padding-left: 50px; padding-right: 50px;">
       <div style="background-color: yellow; border: solid black 1px; display:flex;">
         <div  style="position:relative;">
           <img src="../icons/crown.png" style=" width: 60px;" /><span style="position: absolute;top:16px;left:22px;"> 1位</span></div>
