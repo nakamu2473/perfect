@@ -2,13 +2,11 @@
 import {  RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import TheHeader from './components/TheHeader.vue'
-import WelcomeItem from './components/WelcomeItem.vue'
 
 export default {
   components: {
     HelloWorld,
     TheHeader,
-    WelcomeItem,
    }
 }
 </script>

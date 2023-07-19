@@ -15,8 +15,6 @@
   margin-right: 1rem;
   margin-top: 1rem;
   margin-bottom:  1rem;
-  background: rgb(255, 241, 241);
-  border-radius: 20% 60% 20% 50%/50% 50% 70% 60%;
 }
 
 h3 {

@@ -6,13 +6,15 @@ import { createRouter, createWebHashHistory } from "vue-router"
 import LinkListComponent from "./pages/linkList.vue"
 import HistoryComponent from "./pages/history.vue"
 import Rank2022Component from "./pages/rank2022.vue"
+import HomeComponent from "./pages/home.vue"
 
 const LINKLIST = { template: '<div>linkList</div>' }
 
 const routes = [
   { path: '/linkList', component: LinkListComponent },
   { path: '/rank2022', component: Rank2022Component },
-  { path: '/', component: HistoryComponent },
+  { path: '/history', component: HistoryComponent },
+  { path: '/', component: HomeComponent },
 ]
 
 const router = createRouter({

@@ -20,8 +20,8 @@ export default {
 
 <template> 
   <div class="rank" > 
-    <div class="rank_title" style="background-color: rgb(254, 236, 236); height: 50px;" > 
-      <p>流行語大賞2022</p>
+    <div class="page_title" > 
+      <p>うなげろりん流行語大賞2022</p>
     </div>
 
     <RankItem msg="Hello" v-for="(item, key) in rank2022" :key="key">
@@ -49,7 +49,7 @@ export default {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
-  font-size: 80%;
+  font-size: 0.9rem;
 }
 
 img {
@@ -59,4 +59,5 @@ img {
 .history_link{
   min-height: 30px;
 }
+
 </style>
