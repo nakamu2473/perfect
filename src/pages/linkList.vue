@@ -1,11 +1,11 @@
 <script>
-import WelcomeItem from '../components/WelcomeItem.vue'
+import LinkItem from '../components/LinkItem.vue'
 import { unagero } from "../data/unagero"
 
 
 export default {
   components: {
-    WelcomeItem
+    LinkItem
    }
    ,
   data() {
@@ -19,8 +19,10 @@ export default {
 </script>
 <template> 
     <div class="linkList" > 
-      <p>podcastのリンク一覧</p>
-      <WelcomeItem v-for="(nakami, key) in unagero2" :key="key">
+      <div class="page_title" > 
+        <p>podcastのリンク一覧</p>
+      </div>
+      <LinkItem v-for="(nakami, key) in unagero2" :key="key">
         <template #heading>
           <a :href="nakami.url"   target="_blank" rel="noopener noreferrer">
             {{ nakami.title }}
@@ -32,7 +34,7 @@ export default {
             <a :href="info.url"   target="_blank" rel="noopener noreferrer">{{ info.point }}</a>
           </li>
         </ul>
-      </WelcomeItem>
+      </LinkItem>
   </div>
 </template>
 
@@ -43,7 +45,7 @@ export default {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
-  font-size: 80%;
+  font-size: 0.9rem;
 }
 
 </style>
