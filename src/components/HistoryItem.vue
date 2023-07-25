@@ -57,7 +57,6 @@ i {
     border-left: 1px solid #c842f4;
     position: absolute;
     left: 35px;
-    bottom: calc(50% + 25px);
     height: calc(50% - 25px);
     z-index: -1 
 }

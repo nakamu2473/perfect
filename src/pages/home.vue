@@ -4,7 +4,8 @@ export default {
     return {
       unagero_url: "https://jocr.jp/programsite/unagerorin/",
       mayurika_url: "https://www.mayurika-official.com/",
-      renraku_url: "https://forms.gle/YM4n6SnEcWUAXwij9"
+      renraku_url: "https://forms.gle/YM4n6SnEcWUAXwij9",
+      bosyu_url: "https://forms.gle/WLoYSbaU2LYbpGgE9"
     }
   }
 }
@@ -39,10 +40,15 @@ export default {
               <router-link to="/history">History</router-link>では二人の過去のエピソードを時系列に選んで聴くことができます！
             </p>
             <p>
-              <router-link to="/rank2022">The Trendy Word of the Year 2022</router-link>では2022年のうなげろりん流行語大賞に選ばれたエピソードを聴くことができます！
+              <router-link to="/rank2022">The Trendy Word of the Year 2022</router-link>では2022年のうなげろりん流行語大賞に選ばれたエピソードをその秒数から聴くことができます！
             </p>
+
             <p>現在はSpotifyのリンクにのみ対応しています。</p>
-            <p>何かありましたらご連絡は<a :href="renraku_url"  target="_blank" rel="noopener noreferrer">こちら</a>まで。
+            <p>
+              エピソードリンクは<a :href="bosyu_url"  target="_blank" rel="noopener noreferrer">こちら</a>から募集しています！
+            </p>
+            <p>
+              何かありましたらご連絡は<a :href="renraku_url"  target="_blank" rel="noopener noreferrer">こちら</a>まで。
             </p>
           <br>
           </div>
